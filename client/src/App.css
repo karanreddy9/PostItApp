@@ -1,0 +1,24 @@
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 48px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+.authcontent {
+  padding-top: 150px; /* Space for fixed navbar */
+}
+
+.maincontent {
+  padding-top: 50px; /* Space for fixed navbar */
+}
+  
